@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@drawable/footer_shadow"
+    android:layout_gravity="center"
+    android:layout_centerVertical="true"
+    android:layout_height="match_parent">
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/navi_icons_map"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/navi_icons_calendar"
+        android:layout_width="30dp"
+        android:layout_height="40dp" />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/navi_icons_chart"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/navi_icons_mail"
+        android:layout_width="30dp"
+        android:layout_height="40dp" />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/navi_icons_profile"
+        android:layout_width="30dp"
+        android:layout_height="35dp" />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+</LinearLayout>

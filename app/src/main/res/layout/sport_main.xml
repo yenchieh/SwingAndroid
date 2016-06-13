@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background_purple"
+    tools:context="com.example.yen_chieh.testandroid.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/sportHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/white"
+        android:gravity="center"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <TextView
+            fontPath="Avenir_bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/activity_title"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/toolbar_text_size" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/sportHeader"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            fontPath="Avenir_bold.ttf"
+            android:id="@+id/activityTitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Don't give up! You can do this!"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/activity_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:layout_below="@+id/activityTitle"
+            android:id="@+id/stepProgressBar"
+            android:progressDrawable="@drawable/progress_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_marginTop="20dp"
+            android:progress="39"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_bar_size" />
+        <TextView
+            fontPath="Avenir_bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="@string/activity_bar_step"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+            android:textSize="@dimen/activity_bar_text"
+            android:layout_alignLeft="@id/stepProgressBar"
+            android:layout_alignTop="@id/stepProgressBar"
+            android:layout_marginTop="@dimen/activity_bar_text_center"
+        />
+
+        <ProgressBar
+            android:layout_below="@+id/stepProgressBar"
+            android:id="@+id/distanceProgressBar"
+            android:progressDrawable="@drawable/progress_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_marginTop="20dp"
+            android:progress="50"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_bar_size" />
+        <TextView
+            fontPath="Avenir_bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="@string/activity_bar_distance"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+            android:textSize="@dimen/activity_bar_text"
+            android:layout_alignLeft="@id/distanceProgressBar"
+            android:layout_alignTop="@id/distanceProgressBar"
+            android:layout_marginTop="@dimen/activity_bar_text_center"
+            />
+
+        <ProgressBar
+            android:layout_below="@+id/distanceProgressBar"
+            android:id="@+id/activityProgressBar"
+            android:progressDrawable="@drawable/progress_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_marginTop="20dp"
+            android:progress="68"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_bar_size" />
+        <TextView
+            fontPath="Avenir_bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="@string/activity_bar_flight"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+            android:textSize="@dimen/activity_bar_text"
+            android:layout_alignLeft="@id/activityProgressBar"
+            android:layout_alignTop="@id/activityProgressBar"
+            android:layout_marginTop="@dimen/activity_bar_text_center"
+            />
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/city_overall" />
+
+</RelativeLayout>

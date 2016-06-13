@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dashboard_horizontal_margin"
+    android:paddingRight="@dimen/dashboard_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="55dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context="com.example.yen_chieh.testandroid.MainActivity"
+    android:background="@drawable/background_excellent">
+
+    <TextView
+        android:id="@+id/dashboardTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/dashboard_content_title"
+        android:textColor="@color/orange"
+        android:layout_marginTop="@dimen/page_margin_top"
+        fontPath="Avenir_bold.ttf"
+        android:textSize="@dimen/dashboard_title"/>
+
+    <ImageView
+        android:id="@+id/monsterImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dashboard_monster_height"
+        android:layout_below="@+id/dashboardTitle"
+        android:src="@drawable/monster_yellow"/>
+
+    <TextView
+        android:id="@+id/dashboardText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/monsterImage"
+        android:gravity="center"
+        android:text="@string/dashboard_excellent_text"
+        android:textColor="@color/orange"
+        fontPath="Avenir_bold.ttf"
+        android:textSize="@dimen/dashboard_title"/>
+
+    <LinearLayout
+        android:id="@+id/dashboardLinearLayout"
+        android:layout_below="@+id/dashboardText"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/uvButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/dashboard_button_uv"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+
+        <ImageView
+            android:id="@+id/activityButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/dashboard_button_activity"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+
+        <ImageView
+            android:id="@+id/weatherButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/dashboard_button_weather"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+
+        <ImageView
+            android:id="@+id/debuggerButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/dashboard_button_weather"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

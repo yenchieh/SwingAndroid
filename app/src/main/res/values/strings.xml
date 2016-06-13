@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TestAndroid</string>
+    <string name="action_settings">Settings</string>
+    <string name="dashboard_title">Dashboard</string>
+    <string name="uv_title">UVI</string>
+    <string name="activity_title">Activity</string>
+    <string name="activity_bar_step">Step</string>
+    <string name="activity_bar_distance">Distance</string>
+    <string name="activity_bar_flight">Flight</string>
+    <string name="weather_title">Weather</string>
+
+
+    <string name="dashboard_content_title">How are you doing today?</string>
+    <string name="dashboard_excellent_text">Excellent!</string>
+</resources>

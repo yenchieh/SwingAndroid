@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottomBarMap"
+        android:icon="@drawable/navi_icons_map"
+        android:title="Map" />
+
+    <item
+        android:id="@+id/bottomBarCalendar"
+        android:icon="@drawable/navi_icons_calendar"
+        android:title="Calendar" />
+
+    <item
+        android:id="@+id/bottomBarChart"
+        android:icon="@drawable/navi_icons_chart"
+        android:title="Chart" />
+
+    <item
+        android:id="@+id/bottomBarMail"
+        android:icon="@drawable/navi_icons_mail"
+        android:title="Mail" />
+
+    <item
+        android:id="@+id/bottomBarProfile"
+        android:icon="@drawable/navi_icons_profile"
+        android:title="Profile" />
+
+</menu>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.yen_chieh.testandroid.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/uviHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/white"
+        android:gravity="center"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <TextView
+            fontPath="Avenir_bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/uv_title"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/toolbar_text_size" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_below="@+id/uviHeader"
+        android:background="@drawable/background_green"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                fontPath="Avenir_bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="UV Index"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dashboard_title" />
+
+            <TextView
+                android:id="@+id/uvLocation"
+                fontPath="Avenir_bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="New York, USA"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/dashboard_sub_title" />
+
+            <TextView
+                fontPath="Avenir_bold.ttf"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/thick_circle"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/green"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/uvText"
+                fontPath="Avenir_bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:text="You can safely enjoy being outside"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dashboard_sec_title" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/city_overall" />
+</RelativeLayout>
